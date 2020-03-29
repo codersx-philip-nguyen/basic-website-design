@@ -1,0 +1,38 @@
+.pagewrapper .headerwrap {
+    display: flex;
+    border-bottom: 1px #ded6d6 solid;
+}
+
+
+.header {
+    flex-grow: 1;
+    padding: 0px 20px;
+    position: relative;
+}
+
+
+
+.header .header-bar .logo a{
+    font-family: Arial, sans-serif;
+    font-size: 2em;
+    color: #111;
+    text-decoration: none;
+}
+
+.header .header-bar .sologan {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #9e9898;
+    margin-left: 5px;
+    padding-bottom: 10px;
+}
+.header .header-menu {
+    position: absolute;
+    right: 25px;
+    top: 0px;
+    color: #111;
+}
+
+.header .header-menu .dropdown-content {
+    display: none;
+}
