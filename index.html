@@ -12,7 +12,7 @@
 </head>
 <body>
     <div class="pagewrapper">
-        <div class="headerwrap fixed" style="display: block; margin-top: 0px;">
+        <div id="myHeader" class="headerwrap" style="display: block; margin-top: 0px;">
             <div class="header">
                 <div class="header-bar">
                     <div class="logo">
@@ -23,28 +23,52 @@
                     </div>
                 </div>
                 <div class="header-menu">
-                    <a href="">
-                        <i class="fas fa-bars fa-2x"></i>
-                    </a>
-                    <div class="dropdown-content">
-
-                        <a href="#">VLOG</a>
-                        <a href="#">BLOG</a>
-                        <a href="#">RADIO</a>
-                        <a href="#">WHO IS GIANG?</a>
-                        <a href="#">CONTACT</a>
-                    </div> 
+                    <ul class="menu">
+                        <li class="has-content">
+                            <a href="#"><i class="fas fa-bars fa-2x"></i></a>
+                            <ul class="content">
+                                <li><a href="#">VLOG</a></li>
+                                <li><a href="#">BLOG</a></li>
+                                <li><a href="#">RADIO</a></li>
+                                <li><a href="#">ABOUT GIANG</a></li>
+                                <li><a href="#">CONTACT</a></li>
+                            </ul>
+                        </li>        
+                    </ul>
                 </div>
             </div>
         </div>
-        <div class="body">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus veritatis labore alias, quia quae odio. Mollitia, soluta facere quas modi illum ipsam quasi perferendis excepturi quibusdam sequi magni est assumenda!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa hic vero earum repellat quaerat. Asperiores, quidem laudantium ea accusamus, ipsum non minus, ad illum aperiam ut laboriosam laborum praesentium perferendis.
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui ratione pariatur suscipit. Molestias rerum ut eaque nobis debitis doloribus soluta eos, nam maxime molestiae sunt. Quaerat quod beatae quasi nobis.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt maiores molestiae, maxime reprehenderit ducimus et iure rerum autem veritatis? Autem vitae laudantium, ut similique debitis doloremque nihil nam! Esse, earum.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. A deserunt explicabo deleniti numquam, fugiat repellendus quasi accusamus exercitationem dolor, earum accusantium ex! Animi repellat ipsam, eum dicta voluptas exercitationem non.
+        <div class="body-content">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur officiis optio in aperiam asperiores a earum eius enim nemo, praesentium quisquam, voluptate ab voluptatibus dolores itaque. Aspernatur, inventore impedit? Esse.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur officiis optio in aperiam asperiores a earum eius enim nemo, praesentium quisquam, voluptate ab voluptatibus dolores itaque. Aspernatur, inventore impedit? Esse.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur officiis optio in aperiam asperiores a earum eius enim nemo, praesentium quisquam, voluptate ab voluptatibus dolores itaque. Aspernatur, inventore impedit? Esse.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur officiis optio in aperiam asperiores a earum eius enim nemo, praesentium quisquam, voluptate ab voluptatibus dolores itaque. Aspernatur, inventore impedit? Esse.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur officiis optio in aperiam asperiores a earum eius enim nemo, praesentium quisquam, voluptate ab voluptatibus dolores itaque. Aspernatur, inventore impedit? Esse.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur officiis optio in aperiam asperiores a earum eius enim nemo, praesentium quisquam, voluptate ab voluptatibus dolores itaque. Aspernatur, inventore impedit? Esse.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur officiis optio in aperiam asperiores a earum eius enim nemo, praesentium quisquam, voluptate ab voluptatibus dolores itaque. Aspernatur, inventore impedit? Esse.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur officiis optio in aperiam asperiores a earum eius enim nemo, praesentium quisquam, voluptate ab voluptatibus dolores itaque. Aspernatur, inventore impedit? Esse.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur officiis optio in aperiam asperiores a earum eius enim nemo, praesentium quisquam, voluptate ab voluptatibus dolores itaque. Aspernatur, inventore impedit? Esse.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur officiis optio in aperiam asperiores a earum eius enim nemo, praesentium quisquam, voluptate ab voluptatibus dolores itaque. Aspernatur, inventore impedit? Esse.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur officiis optio in aperiam asperiores a earum eius enim nemo, praesentium quisquam, voluptate ab voluptatibus dolores itaque. Aspernatur, inventore impedit? Esse.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur officiis optio in aperiam asperiores a earum eius enim nemo, praesentium quisquam, voluptate ab voluptatibus dolores itaque. Aspernatur, inventore impedit? Esse.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur officiis optio in aperiam asperiores a earum eius enim nemo, praesentium quisquam, voluptate ab voluptatibus dolores itaque. Aspernatur, inventore impedit? Esse.</p>
+
         </div>
         <div class="footerwrap"></div>
+        <script type="text/javascript">
+            window.onscroll = function() {myFunction()};
+            
+            var header = document.getElementById("myHeader");
+            var sticky = header.offsetTop;
+            
+            function myFunction() {
+              if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+              } else {
+                header.classList.remove("sticky");
+              }
+            }
+            </script>
     </div>
 </body>
 </html>

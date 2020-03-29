@@ -1,6 +1,10 @@
+body {
+    margin: 5px;
+}
 .pagewrapper .headerwrap {
     display: flex;
     border-bottom: 1px #ded6d6 solid;
+    background-color: #FFF;
 }
 
 
@@ -31,8 +35,65 @@
     right: 25px;
     top: 0px;
     color: #111;
+    padding-left: 50px;
 }
 
-.header .header-menu .dropdown-content {
+.content {
+    padding-top: 15px;
+    padding-left:0px ;
+}
+
+.has-content a{ 
+    text-decoration: none;
+    color:#111;
+}
+
+.has-content a:hover {
+    color: red;
+}
+
+.menu {
+    position: relative;
+    top: -10px;
+   
+}
+
+.has-content {
+    position: absolute;
+}
+
+.has-content:hover .content{
+    display: block;
+}
+.content {
     display: none;
+    position: absolute;
+    left: -128px;
+    top: -20px;
+    background-color: #FFF;
+    
+}
+
+.content li{
+    font-family: Arial,sans-serif;
+    font-size: 16px;
+    padding: 8px;
+    
+}
+.menu li{
+    list-style: none;
+}
+
+.body-content {
+    padding: 0px 20px;
+}
+  
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+  
+.sticky + .body-content {
+    padding-top: 102px;
 }
