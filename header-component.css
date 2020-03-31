@@ -84,10 +84,6 @@ body {
     list-style: none;
 }
 
-.body-content {
-    padding: 0px 20px;
-}
-  
 .sticky {
     position: fixed;
     top: 0;
@@ -96,4 +92,11 @@ body {
   
 .sticky + .body-content {
     padding-top: 102px;
+}
+
+
+.body-content img{
+    max-width:100% ;
+    margin: 0 auto; 
+    display: block; 
 }
