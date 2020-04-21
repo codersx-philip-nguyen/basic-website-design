@@ -1,0 +1,83 @@
+.pagewidth {
+	display: flex;
+	flex-direction: row;
+	position: relative;
+	margin: 20px 80px;
+}
+
+.back-top { 
+	position: absolute;
+	right: 20px;
+	bottom: 80px;
+}
+
+.main-col {
+	display: flex;	
+	flex-direction: column;	
+}
+
+.main-col .upper .gg-logo img {
+	width: 30%;
+	height: 30%;
+	margin-left: 60px;
+}
+
+.main-col .upper .media-icons {
+
+}
+
+.main-col .upper .media-icons ul {
+	display: flex;
+	flex-direction: row;	
+	list-style-type: none;	
+}
+
+.main-col .upper .media-icons li {
+	margin: 10px 20px;
+}
+
+.main-col .lower .footer-text span {
+	margin-left: 40px;
+}
+
+.lower .footer-text a {
+	text-decoration: none;
+	margin-left: 15px;
+}
+
+.section-col {
+	display: flex;
+	flex-direction: row;
+}
+
+
+.feature ul {
+	margin-right: 150px;
+	list-style-type: none;
+	padding-left: 40px;
+}
+
+.feature li {
+	margin: 10px 0px;
+}
+
+.feature a {
+	text-decoration: none;
+	color: #000;
+}
+
+p {
+	font-family: Arial, sans-serif;
+}
+
+li {
+	font-family: Arial, sans-serif;
+}
+
+@media screen and (max-width: 414px) {
+	.pagewidth {
+		display: block;
+	}
+}
+
+

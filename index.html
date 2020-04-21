@@ -6,26 +6,36 @@
     <title>GiangOiBlogger</title>
     <link rel="stylesheet" href="./layout.css">
     <link rel="stylesheet" href="./header-component.css">
+    <link rel="stylesheet" href="./topic-module.css">
+    <link rel="stylesheet" type="text/css" href="./image-wrapper.css">
+    <link rel="stylesheet" type="text/css" href="./footer.css">
     <script defer src="https://use.fontawesome.com/releases/v5.13.0/js/all.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.13.0/js/v4-shims.js"></script>
 
 </head>
 <body>
-    <div class="pagewrapper">
-        <div id="myHeader" class="headerwrap" style="display: block; margin-top: 0px;">
+    <div class="page-wrapper">
+        <div class="header-wrapper">
             <div class="header">
                 <div class="header-bar">
                     <div class="logo">
-                        <a href="#">TECH BLOG</a>
+                        <a href="#"><b>GIANG ƠI</b></a>
                     </div>
                     <div class="sologan">
-                        <span>Bring you to the world</span>
+                        <span>Adulthood of a weirdo</span>
                     </div>
+                </div>
+                <div class="social-media-icons">
+                    <ul>
+                        <li><a href="#"><i class="fab fa-instagram fa-2x"></i></a> </li>
+                        <li><a href="#"><i class="fab fa-facebook-f fa-2x"></i></a> </li>
+                        <li><a href="#"><i class="fab fa-youtube fa-2x"></i></a> </li>
+                    </ul>
                 </div>
                 <div class="header-menu">
                     <ul class="menu">
-                        <li class="has-content">
-                            <a href="#"><i class="fas fa-bars fa-2x"></i></a>
+                        <li class="nav-menu">
+                            <a class="btn-icon" href="#"><i class="fas fa-bars fa-2x"></i></a>
                             <ul class="content">
                                 <li><a href="#">VLOG</a></li>
                                 <li><a href="#">BLOG</a></li>
@@ -38,26 +48,113 @@
                 </div>
             </div>
         </div>
-        <div class="body-content">
-            
+
+        <div class="image-wrapper">
+            <div class="bg">
                 <img src="https://giangoi.com/wp-content/uploads/2018/01/giang-oi.jpg" alt="">
-            
+            </div>
+            <div class="quote">
+                <h3><span style="color: #1f1f1f;">MÌNH LÀ GIANG VÀ MÌNH GHI LẠI HÀNH TRÌNH BƯỚC VÀO THẾ GIỚI NGƯỜI LỚN!</span></h3>
+            </div>
         </div>
-        <div class="footerwrap"></div>
-        <script type="text/javascript">
-            window.onscroll = function() {myFunction()};
-            
-            var header = document.getElementById("myHeader");
-            var sticky = header.offsetTop;
-            
-            function myFunction() {
-              if (window.pageYOffset > sticky) {
-                header.classList.add("sticky");
-              } else {
-                header.classList.remove("sticky");
-              }
-            }
-            </script>
+        <hr width="20%" size="1px" align="center" color= "#000"/>
+        
+        <div class="topic-module">
+            <div class="nav blog">
+                <div class="image">
+                    <a href="#"><img src="https://giangoi.com/wp-content/uploads/2017/09/IMG_2827-1024x767-400x300.jpg"></a>
+                </div>
+                <div class="text">
+                    <a href="#"><span>Blog</span></a>
+                </div>
+            </div>
+
+            <div class="nav radio">
+                <div class="image">
+                    <a href="#"><img src="https://giangoi.com/wp-content/uploads/2017/07/IMG_0217-1024x683-400x300.jpg"></a>
+                </div>
+                <div class="text">
+                    <a href="#"><span>Radio</span></a>
+                </div>
+            </div>
+
+            <div class="nav vlog">
+                <div class="image">
+                    <a href="#"><img src="https://giangoi.com/wp-content/uploads/2017/09/img_2190-400x300.jpg"></a>
+                </div>
+                <div class="text">
+                    <a href="#"><span>Vlog</span></a>
+                </div>
+            </div>
+        </div>
+        <hr width="20%" size="1px" align="center" color= "#000"/>
+
+
+        <div class="footerwrap">
+
+            <div id="footer" class="pagewidth">
+
+                <div class="back-top"><a href="#"><i class="fas fa-chevron-circle-up fa-2x"></i></a></div>
+
+                <div class="main-col">
+                    <div class="upper">
+                        <div class="gg-logo">
+                            <a href="#"><img src="https://giangoi.com/wp-content/uploads/2017/09/cropped-giang-oi-website-thumbnail.jpg"></a>
+                        </div>
+                        <div class="media-icons">
+                            <ul>
+                                <li><a href="#"><i class="fab fa-instagram fa-2x"></i></a> </li>
+                                <li><a href="#"><i class="fab fa-facebook-f fa-2x"></i></a> </li>
+                                <li><a href="#"><i class="fab fa-youtube fa-2x"></i></a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="lower">
+                        <div class="footer-text"><span><a href="#" style="color: #000; font-size: 22px; font-family: Arial, sans-serif;">Giang ơi 2020</a></span></div>
+                    </div>
+                </div>
+
+                <div class="section-col-wrap">
+                    <div class="section-col">
+                        
+                        <div class="col col-1">
+                            <div class="widget feature">
+                                <h4 style="font-family: Arial, sans-serif; font-size: 20px;">Bài viết mới nhất</h4>
+                                <ul>
+                                    <li><a href="#">Tập THỂ DỤC TẠI NHÀ CÙNG MÌNH | Chuyện làm đẹp | Giang ơi</a></li>
+                                    <li><a href="#">10 SỰ THẬT CHO NGÀY NÓI DỐI | VLog | Giang ơi</a></li>
+                                    <li><a href="#">CÁCH TRANG ĐIỂM TẠI NHÀ CỦA MÌNH | Chuyện làm đẹp | Giang ơi</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col col-2">
+                            <div class="widget subcription">
+                                <h4 style="font-family: Arial, sans-serif; font-size: 20px;">NHẬN THÔNG BÁO</h4>
+                                <form>
+                                    <div id="subcription-text">
+                                        <p>Đăng Kí Nhận Bài Viết Mới Nhất Thông Qua Email</p>
+                                    </div>
+                                    <p id="subcribe-email">
+                                        <label class="screen-reader-text">
+                                            Email Address
+                                        </label>
+                                        <input type="email" name="email" required="requỉed" placeholder="Email Address">
+                                    </p>
+                                    <p id="subcribe-submit">
+                                        <button type="submit">
+                                            Đăng Kí
+                                        </button>
+                                    </p>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
+
 </body>
 </html>
